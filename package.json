@@ -2,7 +2,30 @@
   "name": "cointracker",
   "version": "0.1.0",
   "description": "Coin Tracking Dapp",
-  "author": "Smith",
+  "author": "Lamoerey",
+  "license": "MIT",
+  "homepage": "https://cointracker.lamoerey.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Awesome1206/Coin_Promotion"
+  },
+  "bugs": {
+    "url": "https://github.com/Awesome1206/Coin_Promotion/issues"
+  },
+  "email": "gt2018acc@outlook.com",
+  "keywords": [
+    "coin",
+    "promotion",
+    "dapp",
+    "react",
+    "telegram",
+    "bot",
+    "cointracker",
+    "lamoerey",
+    "lamoerey.com",
+    "awesome1206",
+    "awesome1206.com"
+  ],
   "dependencies": {
     "@baublet/use-global-state": "^1.1.0",
     "@emotion/react": "^11.10.4",
@@ -26,7 +49,6 @@
     "bootstrap": "4.3.1",
     "chai": "4.2.0",
     "chalk": "^4.1.2",
-    "concurrently": "5.1.0",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^16.0.3",
@@ -67,18 +89,11 @@
     "web3": "^1.6.0",
     "webpack": "^4.44.0"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.1",
-    "sequelize-cli": "^5.5.0"
-  },
   "scripts": {
-    "start-devserver": "node server/app.js",
-    "start-server": "nodemon server/app.js --watch server/*",
-    "start-front": "react-scripts --openssl-legacy-provider start",
-    "dev": "node server/app.js",
-    "start": "concurrently \"npm run start-server\" \"npm run start-front\" --kill-others --kill-others-on-fail",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "npm run server | react-scripts --openssl-legacy-provider start --kill-others --kill-others-on-fail",
     "test": "react-scripts test",
+    "server": "node server/app.js",
+    "build": "npm run server | react-scripts --openssl-legacy-provider build",
     "eject": "react-scripts eject"
   },
   "engines": {
